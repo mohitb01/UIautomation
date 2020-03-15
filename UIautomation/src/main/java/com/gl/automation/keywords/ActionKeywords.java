@@ -22,7 +22,7 @@ public class ActionKeywords {
 
     public static void openBrowser(String object) {
         // driver=new FirefoxDriver();
-        driver = BrowserFactory.getBrowser("Firefox");
+        driver = BrowserFactory.getBrowser(object);
     }
 
     public static void navigate(String object) {

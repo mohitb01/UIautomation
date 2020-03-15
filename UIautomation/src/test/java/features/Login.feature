@@ -1,6 +1,7 @@
-Feature: Login for catapiller client
+@Regression
+Feature: Login to client application
 
-Scenario: To test login scenario for catapiller
+Scenario: To test login scenario
 		Given I "openBrowser" IE
 		When I "navigate" to URL
     	And I "input_UserName" field

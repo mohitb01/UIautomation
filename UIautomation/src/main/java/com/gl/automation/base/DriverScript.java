@@ -66,6 +66,7 @@ public class DriverScript {
 
     private static synchronized void init()
             throws NoSuchMethodException, SecurityException, IOException {
+    	
         actionKeywords = new ActionKeywords();
         method = actionKeywords.getClass().getMethods();
 
