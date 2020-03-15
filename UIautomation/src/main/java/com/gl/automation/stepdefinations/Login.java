@@ -9,12 +9,19 @@ import cucumber.api.java.en.When;
 
 public class Login extends DriverScript {
 
-    @Given("^I \"([^\"]*)\" IE$")
-    public void i_IE(String action) throws Exception {
-        sActionKeyword = action;
-        execute_Actions();
-        Thread.sleep(2000);
-    }
+	@Given("^I \"([^\"]*)\" \"([^\"]*)\"$")
+	public void i(String action, String browser) throws Exception {
+		 sActionKeyword = action;
+		 sPageObject = browser;
+	     execute_Actions();
+	     Thread.sleep(2000);
+	   
+	}
+	
+	/*
+	 * @Given("^I \"([^\"]*)\" IE$") public void i_IE(String action) throws
+	 * Exception { sActionKeyword = action; execute_Actions(); Thread.sleep(2000); }
+	 */
 
     @When("^I \"([^\"]*)\" to URL$")
     public void i_to_URL(String action) throws Exception {
